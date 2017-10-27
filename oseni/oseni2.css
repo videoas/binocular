@@ -1,0 +1,247 @@
+#view {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+#background{
+height: 100vh;
+width: 100vw;
+/*background-attachment: fixed;*/
+background-image: url(images/autumn-road.jpeg) ;
+background-position: bottom;
+position: absolute;
+top: 0;
+left: 0;
+filter: blur(10px);
+}
+
+#frame{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+}
+
+#binocullar{
+  height: 300px;
+  width: 900px;
+  background-color: blue;
+  position: absolute;
+  z-index: 1;
+  animation: move 5s infinite alternate;
+}
+#binocullar .left,
+#binocullar .right{
+  width: 250px;
+  height: 250px;
+  background-color:green;
+  border-radius: 250px;
+  /*float: left;*/
+   background-position: bottom;
+}
+#binocullar .left{
+  background-image: url(images/autumn-road.jpeg);
+  background-attachment: fixed;
+  position: absolute;
+  top: 25px;
+  left: 184px;
+}
+#binocullar .left .night-l{
+  width: 250px;
+  height: 250px;
+  background-color: #63d03e;
+  border-radius: 250px;
+  opacity: 0.5;
+  position: absolute;
+}
+
+#binocullar .right{
+  background-image: url(images/autumn-road.jpeg);
+  background-attachment: fixed;
+  position: absolute;
+  top: 25px;
+  right: 325px;}
+  #binocullar .right .night-r{
+    width: 250px;
+    height: 250px;
+    background-color:#63d03e;
+    border-radius: 250px;
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  #binocullar .square1{
+       width: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:97px;
+       left: 339px;
+  }
+  #binocullar .square2{
+       height: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:97px;
+       left: 339px;
+  }
+  #binocullar .square3{
+       width: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:188px;
+       left: 339px;
+  }
+  #binocullar .square4{
+       height: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:166px;
+       left: 339px;
+  }
+  #binocullar .square5{
+       width: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:97px;
+       left: 406px;
+  }
+  #binocullar .square6{
+       height: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:98px;
+       left: 426px;
+  }
+  #binocullar .square7{
+       width: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:186px;
+       left: 406px;
+  }
+  #binocullar .square8{
+       height: 20px;
+       border: 1px solid white;
+       position: absolute;
+       top:166px;
+       left: 426px;
+  }
+    #binocullar .cross1{
+       width: 50px;
+       border: 1px solid white;
+       position: absolute;
+       top:141px;
+       left: 288px;
+  }
+    #binocullar .cross2{
+       width: 50px;
+       border: 1px solid white;
+       position: absolute;
+       top:141px;
+       left: 426px;
+  }
+
+    #binocullar .circle{
+
+       width: 20px;
+       height: 20px;
+       border: 2px solid white;
+       position: absolute;
+       border-radius: 20px;
+       top:131px;
+       left: 373px;
+
+  }
+    #binocullar .circle .dot{
+
+       width: 1px;
+       height: 1px;
+       border: 2px solid white;
+       position: absolute;
+       border-radius: 1px;
+       top:7px;
+       left: 7px;
+  }
+    #binocullar .scale{
+
+       width: 200px;
+       border: 1px solid white;
+       position: absolute;
+       top:65px;
+       left: 276px;
+  }
+    #binocullar .scale1{
+
+       height : 10px;
+       border: 1px solid white;
+       position: absolute;
+       top:65px;
+       left: 276px;
+  }
+     #binocullar .w{
+      top: 76px;
+      left:269px;
+      position: absolute;
+      color: white;
+
+    }
+     #binocullar .pc{
+      top: 76px;
+      left:370px;
+      position: absolute;
+      color: white;
+
+    }
+     #binocullar .n{
+      top: 76px;
+      left:471px;
+      position: absolute;
+      color: white;
+
+    }
+    #binocullar .scale2{
+
+       height : 10px;
+       border: 1px solid white;
+       position: absolute;
+       top:65px;
+       left: 379px;
+  }
+    #binocullar .scale3{
+
+       height : 10px;
+       border: 1px solid white;
+       position: absolute;
+       top:65px;
+       left: 476px;
+  }
+    #binocullar .triangle {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid white;
+  position: absolute;
+  top:53px;
+  left: 273px;
+  animation: move1 5s infinite alternate;
+}
+
+
+
+@keyframes move{
+from {left: 10vw;}
+to {left: 50vw;}
+}
+
+  @keyframes move1{
+from {left: 375pxvw;}
+to {left: 471px;}
+}

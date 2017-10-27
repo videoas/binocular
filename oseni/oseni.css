@@ -1,0 +1,62 @@
+#view {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+#background{
+height: 100vh;
+width: 100vw;
+background-image: url(images/autumn-road.jpeg) ;
+background-position: bottom;
+ }
+
+#fog-l{
+    background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid green;
+  /*background: green;*/
+  background-image: url(images/Fog-PNG-Clipart.png);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: rotateY(45deg);
+  background-repeat: repeat-x;
+  opacity: 0.2;
+  animation: color-l 5s infinite;
+  animation-timing-function: linear;
+  filter: drop-shadow(16px 16px 70px blue);
+  }
+#fog-r{
+  background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid blue;
+  background-image: url(images/Fog-PNG-Clipart.png);
+  /*background: blue;*/
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: rotateY(90deg);
+  background-repeat: repeat-x;
+  opacity: 0.2;
+    animation: color-r 15s infinite;
+    animation-timing-function: linear;
+    filter: drop-shadow(16px 16px 70px blue);
+}
+@keyframes color-l{
+  from {opacity: 0.3; background-position: 0px bottom;}
+  50% { opacity: 0.1; background-position: 500px bottom;}
+  to { opacity: 0.3;  background-position: 1000px bottom;}
+}
+@keyframes color-r{
+  from {opacity: 0.2; background-position: 0px bottom;}
+  50% {opacity: 0.1; background-position: -500px bottom;}
+  to {opacity: 0.2;  background-position: -1000px bottom;}
+}
